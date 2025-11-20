@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Sign In Page </title>
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(model.jpg);
+            background-color: #000000;
+            background-blend-mode: hard-light;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .Signin-container {
+            background-color: #000000a9;
+            padding: 100px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: fit-content;
+        }
+        .Signin-container h2 {
+            text-align: center;
+            color: #afff64;
+            margin-bottom: 40px;
+        }
+        .Signin-container label {
+            display: block;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        .Signin-container input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+        }
+        .Signin-button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #218838;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .Signin-button:hover {
+            background-color: #afff64;
+            transition: .5s;
+            transform: scale(1.05);
+        }
+        .signup-link {
+            text-align: center;
+            color: #ffffff;
+            margin-top: 15px;
+        }
+        .signup-link a {
+            color: #218838;
+            text-decoration: none;
+        }
+        .signup-link a:hover {
+            text-decoration: underline;
+            color: #afff64;
+        }
+    </style>
+
+    <body>
+        <div class="Signin-container">
+            <h2>Sign In to FitMax</h2>
+            <form action="/submit_Signin" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="Signin-button">Sign in</button>
+            </form>
+            <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </body>
+</html>
