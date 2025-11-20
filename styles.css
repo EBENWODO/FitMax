@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: hard-light;
+}
+
+nav {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 5px 15px;
+}
+
+.navlist {
+    display : flex;
+    list-style: none;
+    gap: 45px;
+    color: #afff64;
+    padding-left: 100px;
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #afff64;
+}
+
+.getstarted {
+    color: #afff64;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.getstarted .bn1 {
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    border: 2px solid #000000;
+    background-color: #afff64;
+    color: #000000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.getstarted .bn1:hover {
+    background-color: #000000;
+    border: 2px solid #afff64;
+    color: #afff64;
+    transition: .5s;
+    transform: scale(1.05);
+}
+
+.getstarted .bn2 {
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    border: 2px solid #afff64;
+    background-color: #000000;
+    color: #afff64;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.getstarted .bn2:hover {
+    background-color: #afff64;
+    border: 2px solid #000000;
+    color: #000000;
+    transition: .5s;
+    transform: scale(.9);
+}
+
+.main .push {
+    color: #afff64;
+    font-weight: 500;
+    font-size: 70px;
+    padding-left: 15px;
+}
+
+.main .beyond {
+    color: #ffff;
+    font-weight: 500;
+    font-size: 40px;
+    padding-left: 15px;
+}
+
+.main .limits {
+    color: #afff64;
+    font-weight: 500;
+    font-size: 100px;
+    padding-left: 15px;
+}
+
+.main .phrase {
+    color: #ffff;
+    padding-left: 15px;
+}
+
+.main .services button {
+    height: 50px;
+    width: 150px;
+    border-radius: 50px;
+    font-size: 16px;
+    border: 2px solid #afff64;
+    background-color: #afff64;
+    margin: 25px 15px;
+    cursor: pointer;
+}
+
+.main .services button:hover {
+    background-color: #000000;
+    border: 2px solid #afff64;
+    color: #afff64;
+    transition: .5s;
+    transform: scale(1.1);
+}
